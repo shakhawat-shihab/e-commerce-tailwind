@@ -5,10 +5,9 @@ import routes from './routes/route';
 
 function App() {
   return (
-    <div>
-      <RouterProvider router={routes} />
-      {/* <h2>Hello</h2> */}
-    </div>
+    // <div>
+    <RouterProvider router={routes} />
+    // </div>
   );
 }
 

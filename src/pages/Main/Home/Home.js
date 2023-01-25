@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+
 
 const Home = () => {
+    const [products, setProducts] = useState();
+    useEffect(() => {
+        fetch('./data.json')
+            .then(resp => resp.json())
+            .then(json => {
+                console.log(json)
+                setProducts(json);
+            })
+    }, []);
     return (
         <div>
-            <h2 className='text-4xl text-red-600'>Hello World</h2>
+
         </div>
     );
 };
