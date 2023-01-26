@@ -37,9 +37,6 @@ const OrderList = () => {
                                 <th className='p-2'>
                                     <div className='font-semibold text-left'>Customer</div>
                                 </th>
-                                {/* <th className='p-2'>
-                                    <div className='font-semibold text-left'>Mobile</div>
-                                </th> */}
                                 <th className='p-2'>
                                     <div className='font-semibold text-left'>quantity</div>
                                 </th>
@@ -58,7 +55,12 @@ const OrderList = () => {
                                 orders?.map(({ product, name, seller, mobile, quantity, status, price, orderId }) => (
                                     <tr className={orderId}>
                                         <td className='p-2'>
-                                            <div className='font-medium text-gray-800'>{orderId}</div>
+                                            <Link to={`${orderId}`}
+                                                title={`Click to see details of order ${orderId}`}
+                                                className='underline'
+                                            >
+                                                <div class='font-medium text-gray-800'>{orderId}</div>
+                                            </Link>
                                         </td>
                                         <td className='p-2'>
                                             <div className='font-medium text-gray-800'>{product}</div>
@@ -101,12 +103,9 @@ const OrderList = () => {
                                                                 <MdCancel className='text-md text-white' />
                                                             </button>
                                                         </>
-
                                                 }
-
                                             </div>
                                         </td>
-
                                     </tr>
                                 ))
                             }

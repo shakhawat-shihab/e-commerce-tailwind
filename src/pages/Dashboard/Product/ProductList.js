@@ -15,8 +15,8 @@ const ProductList = () => {
             })
     }, []);
 
-
     const { pathname } = useLocation();
+
     return (
         <div className='flex flex-col justify-center items-center h-full w-full '>
             <div className='w-full max-w-7xl mx-auto rounded-lg  bg-white shadow-lg border border-gray-200'>
@@ -69,7 +69,14 @@ const ProductList = () => {
                                     <tr className={key}>
 
                                         <td className='p-2'>
-                                            <div className='font-medium text-gray-800'>{name}</div>
+                                            <Link to={`${key}`}
+                                                title={`Click to see details of ${name}`}
+                                                className='underline'
+                                            >
+                                                <div class='font-medium text-gray-800'>{name}</div>
+                                            </Link>
+
+                                            {/* <div className='font-medium text-gray-800'>{name}</div> */}
                                         </td>
                                         <td className='p-2'>
                                             <div className='text-left capitalize'>{category}</div>
