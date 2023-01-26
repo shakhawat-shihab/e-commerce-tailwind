@@ -68,7 +68,7 @@ const routes = createBrowserRouter([
             },
             {
                 path: "customer",
-                element: <CustomerDetails />,
+                element: <CustomerList />,
             },
             {
                 path: "order/:id",

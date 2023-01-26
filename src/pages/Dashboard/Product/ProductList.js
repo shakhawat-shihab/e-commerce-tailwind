@@ -7,7 +7,7 @@ const ProductList = () => {
     const [products, setProducts] = useState();
 
     useEffect(() => {
-        fetch('./product.json')
+        fetch('http://localhost:3000/product.json')
             .then(resp => resp.json())
             .then(json => {
                 console.log(json)
@@ -20,15 +20,25 @@ const ProductList = () => {
     return (
         <div className='flex flex-col justify-center items-center h-full w-full '>
             <div className='w-full max-w-7xl mx-auto rounded-lg  bg-white shadow-lg border border-gray-200'>
-                <header className='px-5 py-4 border-b border-gray-100'>
-                    <div className='font-semibold text-gray-800'>Products</div>
+                <header className='px-5 py-4 border-b border-gray-100 flex justify-between'>
+                    <div className='font-semibold text-indigo-700 text-md'>Products</div>
+                    <div>
+                        <Link to={`add`}
+                            className='bg-indigo-500 rounded-full py-1 px-2 text-white flex-1 text-bold text-center'
+                        >
+                            <button
+                                className='text-center text-sm px-2 '
+                            >
+                                Add Product
+                            </button>
+                        </Link>
+                    </div>
                 </header>
 
                 <div className='overflow-x-auto p-3'>
                     <table className='table-auto w-full'>
                         <thead className='text-xs font-semibold uppercase text-gray-400 bg-gray-50'>
                             <tr>
-                                <th></th>
                                 <th className='p-2'>
                                     <div className='font-semibold text-left'>Name</div>
                                 </th>
@@ -55,11 +65,9 @@ const ProductList = () => {
 
                         <tbody className='text-sm divide-y divide-gray-100'>
                             {
-                                products?.map(({ name, category, brand, stock, price, key }) => (
+                                products?.map(({ name, category, seller, stock, price, key }) => (
                                     <tr className={key}>
-                                        <td className='p-2'>
-                                            <input type='checkbox' className='w-5 h-5' value='id-1' />
-                                        </td>
+
                                         <td className='p-2'>
                                             <div className='font-medium text-gray-800'>{name}</div>
                                         </td>
@@ -67,23 +75,19 @@ const ProductList = () => {
                                             <div className='text-left capitalize'>{category}</div>
                                         </td>
                                         <td className='p-2'>
-                                            <div className='text-left capitalize'>{brand}</div>
+                                            <div className='text-left capitalize'>{seller}</div>
                                         </td>
                                         <td className='p-2'>
-                                            <div className='text-left capitalize'>{stock}</div>
+                                            <div className='text-left text-indigo-500 '>{stock}</div>
                                         </td>
                                         <td className='p-2'>
-                                            <div className='text-left capitalize'>{price}</div>
+                                            <div className='text-left '>{price}</div>
                                         </td>
-                                        <td className='p-2'>
-                                            <div className='text-left font-medium text-indigo-500'>
-                                                {price}
-                                            </div>
-                                        </td>
+
                                         <td className='p-2'>
                                             <div className='flex justify-center'>
                                                 <button>
-                                                    <Link to={`${pathname}`}>
+                                                    <Link to={`/`}>
                                                         <GrEdit />
                                                     </Link>
                                                 </button>

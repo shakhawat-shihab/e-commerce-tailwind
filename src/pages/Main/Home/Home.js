@@ -6,7 +6,7 @@ import { addToDb } from '../../../db';
 const Home = () => {
     const [products, setProducts] = useState();
     useEffect(() => {
-        fetch('./product.json')
+        fetch('http://localhost:3000/product.json')
             .then(resp => resp.json())
             .then(json => {
                 console.log(json)

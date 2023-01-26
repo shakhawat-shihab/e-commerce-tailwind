@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 const CustomerList = () => {
     const [customers, setCustomers] = useState();
     useEffect(() => {
-        fetch('./customer.json')
+        fetch('http://localhost:3000/customer.json')
             .then(resp => resp.json())
             .then(json => {
                 console.log(json)
