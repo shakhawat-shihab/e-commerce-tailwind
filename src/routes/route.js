@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Dashboard from "../layout/Dashboard/Dashboard";
 import Main from "../layout/Main/Main";
+import CustomerAdd from "../pages/Dashboard/Customer/CustomerAdd";
 import CustomerDetails from "../pages/Dashboard/Customer/CustomerDetails";
 import CustomerList from "../pages/Dashboard/Customer/CustomerList";
 import OrderDetails from "../pages/Dashboard/Order/OrderDetails";
@@ -28,6 +29,10 @@ const routes = createBrowserRouter([
                 element: <Home />,
             },
             {
+                path: "products/:id",
+                element: <ProductDetails />,
+            },
+            {
                 path: "products",
                 element: <Products />,
             },
@@ -40,7 +45,7 @@ const routes = createBrowserRouter([
                 element: <LogIn />,
             },
             {
-                path: "register",
+                path: "signup",
                 element: <Regsiter />,
             },
         ],
@@ -55,10 +60,14 @@ const routes = createBrowserRouter([
             },
             {
                 path: "customer/add",
-                element: <CustomerDetails />,
+                element: <CustomerAdd />,
             },
             {
                 path: "customer/:id",
+                element: <CustomerDetails />,
+            },
+            {
+                path: "customer",
                 element: <CustomerDetails />,
             },
             {

@@ -4,7 +4,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
     const location = useLocation();
-    console.log(location)
+    // console.log(location)
     return (
         <nav className='h-14 bg-indigo-200 rounded-md m-2 px-5'>
             <ul className='h-full  mx-auto flex justify-between items-center gap-3 font-semibold text-indigo-900'>

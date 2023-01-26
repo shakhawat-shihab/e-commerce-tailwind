@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "name": "Colleen Cash",
+        "gender": "female",
+        "email": "colleencash@quizka.com",
+        "mobile": "+880 1725 802555",
+        "category": "Silver",
+        "address": "241 Christopher Avenue, Homeworth, Illinois, 7964",
+        "about": "Sit culpa mollit incididunt id qui nisi Lorem in mollit est id eiusmod irure magna. Voluptate pariatur officia veniam aliqua veniam ut sint qui pariatur enim nulla consequat. Lorem dolore pariatur ea amet fugiat sunt ullamco sit qui veniam. Pariatur commodo laboris reprehenderit voluptate quis.\r\n",
+        "registered": "2014-02-19T12:01:10 -06:00"
+    },
+    {
+        "id": 2,
+        "name": "Ila Vazquez",
+        "gender": "female",
+        "email": "ilavazquez@quizka.com",
+        "mobile": "+880 1725 707108",
+        "category": "Silver",
+        "address": "326 Matthews Court, Gilgo, Utah, 2570",
+        "about": "Ullamco tempor consectetur laboris reprehenderit ullamco commodo dolor nisi irure incididunt enim do laborum qui. Duis ut ex cillum duis. Dolor Lorem reprehenderit aliqua tempor fugiat pariatur.\r\n",
+        "registered": "2022-03-15T10:39:40 -06:00"
+    },
+    {
+        "id": 3,
+        "name": "Mercado Moran",
+        "gender": "male",
+        "email": "mercadomoran@quizka.com",
+        "mobile": "+880 1725 342890",
+        "category": "Gold",
+        "address": "869 Macdougal Street, Concho, Maryland, 1656",
+        "about": "Ut sunt ut dolor mollit laboris. Dolore in aute est sit pariatur ullamco voluptate sunt duis do minim. Deserunt nostrud et est ex mollit Lorem est commodo esse id magna pariatur. Non ipsum voluptate ea Lorem consequat tempor officia elit. In sit ut proident fugiat voluptate aliquip incididunt officia adipisicing magna cillum proident. Id fugiat occaecat ex eiusmod dolore cupidatat voluptate ut nulla quis quis occaecat. Pariatur do laboris aliqua enim Lorem nulla.\r\n",
+        "registered": "2022-05-15T09:29:51 -06:00"
+    },
+    {
+        "id": 4,
+        "name": "Sanford Maddox",
+        "gender": "male",
+        "email": "sanfordmaddox@quizka.com",
+        "mobile": "+880 1725 856821",
+        "category": "Silver",
+        "address": "340 Brightwater Avenue, Eureka, Alaska, 3745",
+        "about": "Nulla cupidatat in incididunt sit tempor nostrud nisi nisi laboris veniam est amet do. Sint ex commodo mollit est sunt. Qui ad est officia tempor aute enim in elit.\r\n",
+        "registered": "2018-06-22T09:20:19 -06:00"
+    },
+    {
+        "id": 5,
+        "name": "Natalie Brewer",
+        "gender": "female",
+        "email": "nataliebrewer@quizka.com",
+        "mobile": "+880 1725 921518",
+        "category": "Bronze",
+        "address": "564 Bogart Street, Northridge, Nevada, 1397",
+        "about": "Ex reprehenderit ut velit do est. Labore eiusmod officia proident esse commodo qui minim enim cillum minim consectetur labore ad occaecat. Proident nulla ea nostrud tempor sit mollit nisi. Sint sint ipsum velit fugiat nulla dolor culpa excepteur occaecat nisi. Minim excepteur consectetur non Lorem magna nulla non exercitation labore esse excepteur consequat. Quis ut non ut ea aliquip proident. Ut est magna in pariatur commodo laboris esse id nostrud.\r\n",
+        "registered": "2019-08-29T12:55:55 -06:00"
+    },
+    {
+        "id": 6,
+        "name": "Gilda Sullivan",
+        "gender": "female",
+        "email": "gildasullivan@quizka.com",
+        "mobile": "+880 1725 49656",
+        "category": "Platinum",
+        "address": "309 Rost Place, Brownlee, Georgia, 9863",
+        "about": "Lorem ea anim ad adipisicing enim nulla elit elit enim labore culpa duis. Quis officia mollit incididunt ipsum. Commodo qui labore nisi culpa consectetur sint aliquip quis eu culpa in proident magna. Occaecat occaecat aute amet nisi ut aliqua est tempor aliqua. Magna dolor eiusmod quis ut duis in culpa aliquip. Deserunt amet officia irure ad minim.\r\n",
+        "registered": "2018-07-05T10:43:28 -06:00"
+    }
+]
